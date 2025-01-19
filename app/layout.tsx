@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
+import Navbar from "@/components/navigation/navbar";
 
 const inter = localFont({
   src: "./fonts/InterVF.ttf",
@@ -15,7 +17,7 @@ const spaceGrotesk = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Dev Ask",
+  title: "Ask Dev",
   description:
     "AskDev: The superior alternative to Stack Overflow. AI-powered quick responses, community-driven solutions, and a modern, intuitive UI make it the go-to platform for professional tech assistance and innovative learning.",
   icons: {
@@ -29,11 +31,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
