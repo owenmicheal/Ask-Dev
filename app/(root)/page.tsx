@@ -1,8 +1,31 @@
+import LocalSearch from "@/components/search/LocalSearch";
 import { Button } from "@/components/ui/button";
 import ROUTES from "@/constants/routes";
 import Link from "next/link";
 
 const Home = async () => {
+  const questions = [
+    {
+      _id: "1",
+      title: "How to learn React",
+      tags: [{ _id: "1", name: "React" }],
+    },
+    {
+      _id: "2",
+      title: "How to learn Next",
+      tags: [{ _id: "3", name: "Next" }],
+    },
+    {
+      _id: "3",
+      title: "How to learn Laravel",
+      tags: [{ _id: "3", name: "Laravel" }],
+    },
+    {
+      _id: "4",
+      title: "How to learn MongoDB",
+      tags: [{ _id: "4", name: "MongoDB" }],
+    },
+  ];
   return (
     <>
       <section
@@ -17,14 +40,16 @@ const Home = async () => {
           <Link href={ROUTES.ASK_QUESTION}>Ask a question</Link>
         </Button>
       </section>
-      <section className="mt-11">LocalSearch</section>
+      <section className="mt-11">
+        <LocalSearch
+          route="/"
+          imgSrc="/icons/search.svg"
+          placeholder="Search questions..."
+          otherClasses="flex-1"
+        />
+      </section>
       HomeFilters
-      <div className="mt-10 flex w-ful flex-col gap-6">
-        <p>Question Card 1</p>
-        <p>Question Card 1</p>
-        <p>Question Card 1</p>
-        <p>Question Card 1</p>
-      </div>
+      <div className="mt-10 flex w-ful flex-col gap-6"></div>
     </>
   );
 };
