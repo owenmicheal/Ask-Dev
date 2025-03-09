@@ -49,7 +49,7 @@ const LocalSearch = ({ route, imgSrc, placeholder, otherClasses }: props) => {
   return (
     <div
       className={`background-light800_darkgradient flex min-h-[56px] grow items-center
-    gap-4 rounded-[10px] px-4 ${otherClasses}`}
+    gap-4 rounded-[10px] px-4  ${otherClasses}`}
     >
       <Image
         src={imgSrc}
@@ -64,7 +64,7 @@ const LocalSearch = ({ route, imgSrc, placeholder, otherClasses }: props) => {
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         className="paragraph_regular no-focus placeholder text-dark400_light700 border-none
-        shadow-none outline-none "
+        shadow-none outline-none"
       />
     </div>
   );
