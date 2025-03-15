@@ -1,6 +1,5 @@
 import LeftSidebar from "@/components/navigation/LeftSidebar";
 import Navbar from "@/components/navigation/navbar";
-import RightSidebar from "@/components/navigation/RightSidebar";
 import React, { ReactNode } from "react";
 
 const Rootelayout = ({ children }: { children: ReactNode }) => {
@@ -17,8 +16,6 @@ const Rootelayout = ({ children }: { children: ReactNode }) => {
         >
           <div className="mx-auto w-full max-w-5xl">{children}</div>
         </section>
-
-        <RightSidebar />
       </div>
     </main>
   );

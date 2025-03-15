@@ -33,14 +33,14 @@ const MobileNavigation = () => {
         <SheetTitle className="hidden">Navigation</SheetTitle>
         <Link href="/" className="flex items-center gap-1">
           <Image
-            src="/images/site-logo.svg"
-            width={23}
-            height={23}
+            src="/images/kinematrixlogo.png"
+            width={30}
+            height={30}
             alt="Logo"
           />
 
           <p className="h2-bold font-space-grotesk text-dark-100 dark:text-light-900">
-            Dev<span className="text-primary-500">Flow</span>
+            Kine<span className="text-primary-500">Matrix</span>
           </p>
         </Link>
 

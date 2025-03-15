@@ -12,18 +12,18 @@ const Navbar = () => {
     >
       <Link href="/" className="flex items-center gap-1">
         <Image
-          src="/images/site-logo.svg"
-          width={23}
-          height={23}
+          src="/images/kinematrixlogo.png"
+          width={30}
+          height={30}
           alt="Ask Dev Logo"
         />
 
         <p className="h2-bold font-space-grotesk text-dark-100 dark:text-light-900 max-sm:hidden ">
-          Ask<span className="text-primary-500">Dev</span>
+          Kine<span className="text-primary-500">Matrix</span>
         </p>
       </Link>
 
-      <p>Global Search</p>
+      <p>Dashboard</p>
 
       <div className="flex-between gap-5">
         <Theme />

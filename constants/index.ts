@@ -7,7 +7,7 @@ export const sidebarLinks = [
   {
     imgURL: "/icons/users.svg",
     route: "/community",
-    label: "Community",
+    label: "Devices",
   },
   {
     imgURL: "/icons/star.svg",
@@ -17,12 +17,12 @@ export const sidebarLinks = [
   {
     imgURL: "/icons/suitcase.svg",
     route: "/jobs",
-    label: "Find Jobs",
+    label: "Services",
   },
   {
     imgURL: "/icons/tag.svg",
     route: "/tags",
-    label: "Tags",
+    label: "Saved Data",
   },
   {
     imgURL: "/icons/user.svg",
@@ -32,6 +32,6 @@ export const sidebarLinks = [
   {
     imgURL: "/icons/question.svg",
     route: "/ask-question",
-    label: "Ask a question",
+    label: "Help",
   },
 ];

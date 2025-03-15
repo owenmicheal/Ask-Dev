@@ -52,22 +52,15 @@ const Home = async ({ searchParams }: SearchParams) => {
         className="flex w-full flex-col-reverse sm:flex-row justify-between
       gap-4 sm:items-center"
       >
-        <h1 className="h1-bold text-dark100_light900">All questions</h1>
+        <h1 className="h1-bold text-dark100_light900">Dashboard</h1>
         <Button
           className="primary-gradient min-h-[46px] p-4 py-3 !text-light900"
           asChild
         >
-          <Link href={ROUTES.ASK_QUESTION}>Ask a question</Link>
+          <Link href={ROUTES.ASK_QUESTION}>Register Devices</Link>
         </Button>
       </section>
-      <section className="mt-11">
-        <LocalSearch
-          route="/"
-          imgSrc="/icons/search.svg"
-          placeholder="Search questions..."
-          otherClasses="flex-1"
-        />
-      </section>
+      <section className="mt-11">Devise</section>
       <h1 className="mt-8">Home filters</h1>
       <div className="mt-10 flex w-ful flex-col gap-6">
         {filteredQuestions.map((question) => (

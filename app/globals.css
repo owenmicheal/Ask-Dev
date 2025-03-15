@@ -216,7 +216,7 @@ body {
   }
 
   .primary-gradient {
-    background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%);
+    background: linear-gradient(129deg, #00a300 0%, #66cc66 100%);
   }
 
   .dark-gradient {
@@ -236,7 +236,7 @@ body {
   }
 
   .primary-text-gradient {
-    background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%);
+    background: linear-gradient(129deg, #00a300 0%, #66cc66 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -379,7 +379,7 @@ code {
   hyphens: auto;
 
   padding: 2px;
-  color: #ff7000 !important;
+  color: #00a300 !important;
 }
 
 .markdown pre {
