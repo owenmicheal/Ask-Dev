@@ -40,7 +40,7 @@ const MobileNavigation = () => {
           />
 
           <p className="h2-bold font-space-grotesk text-dark-100 dark:text-light-900">
-            Kine<span className="text-primary-500">Matrix</span>
+            Skin<span className="text-primary-500">Dictionary</span>
           </p>
         </Link>
 

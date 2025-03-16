@@ -1,11 +1,24 @@
-import React from "react";
+import Image from "next/image";
+import RegisterForm from "@/components/form/RegisterForm";
+import { getUser } from "@/lib/actions/patient.actions";
 
-const Community = () => {
+const Register = async ({ params: { userId } }: SearchParamProps) => {
+  // Only get the user, skip patient check
+  const user = await getUser(userId);
+
   return (
-    <div className="min-h-screen flex justify-center items-center">
-      <p className="text-primary-500">Devices</p>
+    <div
+      className="flex w-full flex-col-reverse sm:flex-row
+      gap-4 sm:items-center"
+    >
+      <section className=" container">
+        <div className="flex-col">
+          <RegisterForm user={user} />
+          <p className="copyright py-12">© 2025 Skin Dictionary</p>
+        </div>
+      </section>
     </div>
   );
 };
 
-export default Community;
+export default Register;

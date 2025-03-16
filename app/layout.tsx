@@ -20,11 +20,10 @@ const spaceGrotesk = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "KineMatrix",
-  description:
-    "AskDev: The superior alternative to Stack Overflow. AI-powered quick responses, community-driven solutions, and a modern, intuitive UI make it the go-to platform for professional tech assistance and innovative learning.",
+  title: "Skin Dictionary",
+  description: "An Ultimate Web `clinic Management System",
   icons: {
-    icon: "/images/kinematrixlogo.png",
+    icon: "/images/Skinlogo.png",
   },
 };
 
